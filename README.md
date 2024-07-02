@@ -38,3 +38,17 @@ SELECT col1 AS col_nombre1, col2 AS col_nombre2 FROM tabla;
 ```sql
 SELECT nombre_completo, sueldo AS "Salario de Empleados" FROM tabla;
 ```
+
+# Uso de mayor que
+si disponemos de una tabla llamada "productos" con la columna precio, podemos recuperar todas las filas en las que el precio sea mayor a 100.
+```sql
+SELECT * FROM productos WHERE precio > 100;
+```
+
+# operador mayor o igual que
+
+El operador mayor o igual que (>=) se utiliza para seleccionar registros en los que el valor de una columna sea mayor o igual a un valor específico.
+
+```sql
+SELECT * FROM productos WHERE precio >= 100;
+```
