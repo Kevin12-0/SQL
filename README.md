@@ -86,3 +86,16 @@ select nombre from usuarios where id = 2
 
 # filas bajo una condición de igualdad (tipo de dato string)
 
+para comparar textos debemos utilizar comillas simples ('')
+
+```sql
+select * from productos where nombre = 'Pantalón';
+```
+
+```sql
+select * from productos where nombre = 'Silla de Oficina'
+```
+
+# filas bajo una condición de igualdad (tipo de dato booleano true)
+
+
