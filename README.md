@@ -290,6 +290,3 @@ as email_limpio from usuarios
 select length(apellido) from usuarios
 ```
 
-# Obteniendo el nombre mas largo de la tabla
-
-
