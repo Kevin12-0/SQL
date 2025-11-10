@@ -54,4 +54,19 @@ DELETE FROM PRODUCTOS WHERE IdProducto = 3;
 
 Conjunto de instrucciones que se pueden ejecutar de forma repetida, algo asi como una funcion en un lenguaje de programacion. Ayuda a  ejecutar bloques de codigo o relizar tareas complejas.
 
+```sql
+-- Procedimiento almacenado para insertar un producto, se defe de darle un nombre empezando por SP
 
+CREATE PROCEDURE SP_INS_PRODCUTO(
+    @descripcion VARCHAR(50),
+    @color VARCHAR(50),
+    @precio MONEY
+) 
+AS
+-- INSERT productos o INSERT valores
+INSERT INTO PRODUCTOS VALUES(@descripcion,@color,@precio);
+
+-- usar el proceso pora insertar valores en el proceso
+
+EXEC SP_INS_PRODCUTO 'PANTS DEPORTIVO','BLACK',750;
+```
